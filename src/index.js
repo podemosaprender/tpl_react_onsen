@@ -1,10 +1,12 @@
+//INFO: este es el punto de entrada a nuestra aplicacion, de aqui en mas usanmos import
 const { createElement, useState } = React;
 const render = ReactDOM.render;
 const html = htm.bind(createElement);
-import {Saludo, Contador} from './MiComponente.js';
-import OnsenApp from './Onsen.js';
-console.log("En main Saludo es",Saludo);
+//A: definimos las funciones de react como requiere este runtime
 
+import OnsenApp from './onsen.js'; //A: importo de mis archivos, etc.
+
+//S: ejemplo FUNCIONAL + htm
 function ClickCounter() {
 	const [count, setCount] = useState(0);
 
@@ -17,6 +19,7 @@ function ClickCounter() {
 		 `;
 }
 
+//S: ejemplo class
 class App extends React.Component {
 	constructor(props) {
 		super(props);
@@ -38,5 +41,6 @@ class App extends React.Component {
 	}
 }
 
+//S: conectar la aplicacion al dom
 render(html`<${OnsenApp}/>`, document.getElementById("App"));
 

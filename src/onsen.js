@@ -1,7 +1,10 @@
+//INFO: asi usamos onsen con html
 const { createElement, useState } = React;
-const render= ReactDOM.render;
-const html= htm.bind(createElement);
+const render = ReactDOM.render;
+const html = htm.bind(createElement);
+//A: definimos las funciones de react como requiere este runtime
 
+//VER: https://github.com/developit/htm
 class OnsenApp extends React.Component {
   constructor(props) {
     super(props);

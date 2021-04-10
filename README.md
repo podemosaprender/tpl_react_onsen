@@ -11,4 +11,4 @@ Solución que encontramos:
 2. Usamos htm para las plantillas en vez de JSX así zafamos de babel
 3. Tenemos import para nuestros módulos, para las librerías usamos el tag script y globales
 
-
+Las plantillas de HTM se usan [así](https://github.com/developit/htm) y con eso nos ahorramos babel! (que sino se rompe, hace difícil sumar devs, etc.)
