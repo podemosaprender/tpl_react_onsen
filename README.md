@@ -12,3 +12,12 @@ Solución que encontramos:
 3. Tenemos import para nuestros módulos, para las librerías usamos el tag script y globales
 
 Las plantillas de HTM se usan [así](https://github.com/developit/htm) y con eso nos ahorramos babel! (que sino se rompe, hace difícil sumar devs, etc.)
+
+Entonces para desarrollar podés hacer por ej. simplemente
+
+~~~
+cd src
+npx http-server
+~~~
+
+Y va a abrir un servidor con tus archivos.
